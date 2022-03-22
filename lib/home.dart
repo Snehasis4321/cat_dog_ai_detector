@@ -69,10 +69,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Home Page")),
+      appBar: AppBar(title: const Text("Detection Zone ")),
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        const Text("Coding Zone"),
-        const Text("Cat Dog decetor"),
+        const Text("Either click or select a photo and get your result."),
         Padding(
           padding: const EdgeInsets.all(16.0),
           child: Row(
@@ -97,7 +96,9 @@ class _HomePageState extends State<HomePage> {
                 height: 250,
                 child: _image != null
                     ? Image.file(File(_image!.path))
-                    : const FlutterLogo()),
+                    : const FlutterLogo(
+                        size: 200,
+                      )),
             const SizedBox(
               height: 20,
             ),

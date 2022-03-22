@@ -1,16 +1,26 @@
-# cat_dog_ai_detector
 
-A new Flutter project.
+# Cat Dog Detector App Flutter
 
-## Getting Started
+An app that detects cat and dog and display the result
 
-This project is a starting point for a Flutter application.
+## Packages Used 
 
-A few resources to get you started if this is your first Flutter project:
+- tflite
+- image_picker
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# Workings 
+- first trained a model of dataset with 8000+ images of Cats and Dog
+- create tflite model
+- used tflite flutter package to display the result.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+## Screenshots
+
+![App Screenshot]()
+
+
+## Authors
+
+- [Snehasis](https://www.github.com/snehasis4321)
+

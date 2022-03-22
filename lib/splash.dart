@@ -7,12 +7,15 @@ class SplashScreenOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text("Cat And Dog Detector")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Image(image: AssetImage('assets/images.jpeg')),
-            TextButton(
+            ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: const Image(image: AssetImage('assets/images.jpeg'))),
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const HomePage()));
